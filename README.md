@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Тестовое задание на вакансию Frontend-разработчик
+Необходимо написать одностраничный сайт с заметками, хранящимися в браузере.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Каждая заметка содержит следующие данные:
+* Название (текст);
+* Содержание (текст);
+* Дата создания (дата-время);
+* Дата последнего редактирования (дата-время).
 
-## Available Scripts
+Все заметки должны выводиться в виде списка карточек в центре страницы.
+На карточке должны находится все данные заметки, а также интерактивные элементы для реализации возможности:
+* Редактирования заметки (редактируется только название и содержание);
+* Удаления заметки.
 
-In the project directory, you can run:
+Для хранения данных использовать хранилище браузера.
+Для удобства пользователя необходимо реализовать сортировку карточек по:
+* Названию;
+* Дате создание;
+* Дате последнего изменения.
 
-### `npm start`
+Интерактивные элементы вне карточек должны находится в шапке страницы.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Исходный код необходимо опубликовать в репозитории на удобной git-платформе (рекомендуется Github).
+В изменения в репозитории должны быть разделены на коммиты по смысловым блокам.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Чек-лист исходного кода
+- [ ] Весь код написан с использованием TypeScript;
+- [ ] Код не содержит необоснованных типов `any`;
+- [ ] Описаны типы для всех структур данных;
+- [ ] Использованы исключительно функциональные компоненты;
+- [ ] Применена мемоизация (React.memo, useState, useMemo, useCallback, useEffect и т.д.);
+- [ ] Применён LESS;
+- [ ] Применён React Bootstrap;
+- [ ] Код в репозитории разделён на коммиты;
+- [ ] Коммиты имеют названия, кратко описывающие внесённые изменения.
 
-### `npm test`
+# Чек-лист готового продукта
+- [ ] При открытии страницы загружаются все существующие заметки в список;
+- [ ] На карточках отображается вся информация о конкретной заметке;
+- [ ] На сайте есть кнопка для добавления новой карточки и она выполняет свои функции;
+- [ ] На карточке получается воспользоваться интерактивными элементами и отредактировать/удалить заметку;
+- [ ] После закрытия и нового открытия страницы и браузера заметки не изменяются;
+- [ ] На странице имеются интерактивные элементы для сортировки заметок по название/дате создание/дате редактирования и они выполняют свои функции.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Полезные примечание
+Для упрощения разработки предлагается к использованию [Create React App](https://create-react-app.dev/). Он содержит готовый шаблон приложения для разработки на ReactTS.
+Для улучшения визуальной составляющей  и упрощения стилизации рекомендуется [React Bootstrap](https://react-bootstrap.netlify.app/), он позволяет минимизировать написание собственных компонентов на HTML и CSS.
+Для собственных стилей рекомендуется использовать [LESS](https://lesscss.org/).
+Для проверки навыков работы требуется не использовать тип `any` в [TypeScript](https://www.typescriptlang.org/) без обоснованной необходимости.
+Готовый код можно вложить в репозиторий для портфолио.
 
-### `npm run build`
+# Время выполнения
+Для личной статистики рекомендуется фиксировать время поиска информации и выполнения работы.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Уровень навыка | Приблизительное время выполнения |
+| -------------- | -------------------------------- |
+| Стажёр         | 4 дня (32 часа)                  |
+| Junion         | 1.5 дня (12 часов)               |
+| Middle         | 3 часа                           |
+| Senior         | 2 час                            |
+| Lead           | 1.5 час                          |
